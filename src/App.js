@@ -16,8 +16,8 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      username: '',
-      password: '',
+      username: 'bravo',
+      password: 'K@axum123',
       accessToken: '',
       isAuthenticated: false,
       isLoginFailed: false,
