@@ -3,9 +3,9 @@ import Dropzone from 'react-dropzone';
 import { CognitoUserPool, CognitoUser, AuthenticationDetails } from 'amazon-cognito-identity-js';
 import axios from 'axios';
 
-const UserPoolId = 'us-east-1_BKlPLjwuR';
-const ClientId = '77qi2l33jspvt1cjtomnt9h250';
-const ApiGatewayUrl = 'https://nqkqmuokd3.execute-api.us-east-1.amazonaws.com/testing';
+const UserPoolId = 'us-east-1_hYUaaCwlo';
+const ClientId = '3dapbqpsn0c65vb9irg5cga26u';
+const ApiGatewayUrl = 'https://cjykqc5ik9.execute-api.us-east-1.amazonaws.com/presignedstage';
 
 const userPool = new CognitoUserPool({
   UserPoolId: UserPoolId,
@@ -16,8 +16,8 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      username: 'bravo',
-      password: 'K@axum123',
+      username: 'mekonnen',
+      password: 'A12345678',
       accessToken: '',
       isAuthenticated: false,
       isLoginFailed: false,
